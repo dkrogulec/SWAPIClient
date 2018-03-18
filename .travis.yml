@@ -4,5 +4,6 @@ jdk:
 deploy:
  app: sample-swapi-client
  provider: heroku
+ on: master
  api-key:
   secure: $HEROKU_API_KEY
