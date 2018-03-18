@@ -10,11 +10,11 @@ import pl.swapi.client.dto.HelloDto;
 /**
  * @author Daniel Krogulec
  */
-@RestController()
-public class SampleController {
+@RestController
+public class FilmController {
 
-    @RequestMapping(path = "/", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity greeting() {
+    @RequestMapping(path = "/films/list", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity filmsList() {
         return ResponseEntity.ok(new HelloDto());
     }
 }
