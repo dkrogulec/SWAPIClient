@@ -1,7 +1,8 @@
 language: java
-jdk: oraclejdk8
- deploy:
-  provider: heroku
-  api-key:
-    secure: $HEROKU_API_KEY
-  app: sample-swapi-client
+jdk:
+ - oraclejdk8
+deploy:
+ provider: heroku
+ api-key:
+  secure: $HEROKU_API_KEY
+app: sample-swapi-client
