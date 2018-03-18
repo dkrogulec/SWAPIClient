@@ -6,7 +6,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import pl.swapi.client.dto.FilmListElementDto;
 import pl.swapi.client.services.SwapiService;
+
+import java.util.List;
 
 /**
  * @author Daniel Krogulec
@@ -22,7 +25,7 @@ public class FilmController {
 
     @RequestMapping(path = "/films/list", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity filmsList() {
-        ResponseEntity responseEntity = swapiService.filmsList();
-        return ResponseEntity.ok(responseEntity.getBody());
+        List<FilmListElementDto> filmListElementDtos = swapiService.filmsList();
+        return ResponseEntity.ok(filmListElementDtos);
     }
 }
