@@ -1,4 +1,4 @@
-package pl.swapi.client.dto;
+package pl.swapi.client.dto.films;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

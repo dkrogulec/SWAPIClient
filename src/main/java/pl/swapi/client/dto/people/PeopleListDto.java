@@ -1,4 +1,4 @@
-package pl.swapi.client.dto;
+package pl.swapi.client.dto.people;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -13,7 +13,8 @@ import java.util.List;
 @Getter
 @Setter
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class FilmsListDto {
+public class PeopleListDto {
+
     @JsonProperty("results")
-    private List<FilmListElementDto> films;
+    private List<PeopleListElementDto> people;
 }
