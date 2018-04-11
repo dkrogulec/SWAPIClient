@@ -29,7 +29,10 @@ public class WelcomeDto {
                 .builder()
                 .helloMessage("Welcome in SWAPIClient!")
                 .description("Simple REST client for https://swapi.co/")
-                .endpoints(Lists.newArrayList("/films/list"))
+                .endpoints(Lists.newArrayList(
+                        "/films/list",
+                        "/people/list"
+                ))
                 .build();
     }
 }
